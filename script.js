@@ -21,7 +21,7 @@ class Interface {
     row.innerHTML =`
      <td>${book.title}</td>
      <td>${book.author}</td>
-     <td><a href="#" class="delete">Remove</a></td>
+     <td><button type="submit" class="delete">Remove</button></td>
     `;
     bookList.appendChild(row);
   }
@@ -94,5 +94,6 @@ document.querySelector('.book-list').addEventListener('click', (e)=>{
   Interface.deleteBook(e.target);
 
   // Remove book from storage
-  store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+  //store.removeBook(e.target.parentElement.previousSibling.textContent);
+  console.log(e.target.parentElement.parentElement.firstChild.firstChild.textContent)
 });

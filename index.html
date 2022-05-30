@@ -11,30 +11,59 @@
   <title>Awesome books</title>
 </head>
 <body>
+  <header>
+    <nav>
+      <a href="#">Awesome books</a>
+      <ul class="nav-menu">
+        <li>List</li>
+        <li>Add new</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
   <main>
-    <div class="library">
-      <h1>All Awesome Books</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody class="book-list"></tbody>
-      </table>
-    </div>
-    <hr>
-    <div class="form-container">
-      <h2>Add a new book</h2>
-      <form action="">
-        <input type="text" class="title" placeholder="Title"></br>
-        <input type="text" class="author" placeholder="Author"></br>
-        <button type="submit">Add</button>
-      </form>
-    </div>
+    <section id="book-library">
+      <div class="library">
+        <h1>All Awesome Books</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="book-list"></tbody>
+        </table>
+      </div>
+    </section>
+    
+    <section id="add-book">
+      <div class="form-container">
+        <h2>Add a new book</h2>
+        <form action="">
+          <input type="text" class="title" placeholder="Title"></br>
+          <input type="text" class="author" placeholder="Author"></br>
+          <button type="submit">Add</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-information">
+        <h2>Contact Information</h2>
+        <p>Do you have any question or just want to say "Hello"?</br>You can reach out to us!</p>
+        <ul>
+         <li>Email address: edubew98@gmail.com</li>
+         <li>Phone number: +254718595043</li>
+         <li>Address: Umoja-innercore, 00200 Nairobi, Kenya</li>
+       </ul>
+      </div>
+    </section>
   </main>
+  <footer>
+    <h3>Copyright</h3>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>

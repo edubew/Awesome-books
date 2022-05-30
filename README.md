@@ -13,18 +13,19 @@
 - LINTERS
 
 
+
+
 > To view this project you need to do the following:
 
-## Prerequisites
-- Github account
-- Code editor
-- Git
+  ## Prerequisites
+    - Github account
+    - Code editor
+    - Git
 
 
-
-## Setup
-- git init
-- git clone https://github.com/edubew/Awesome-books.git
+  ## Setup
+   - git init
+   - git clone https://github.com/edubew/Awesome-books.git
 
 
 

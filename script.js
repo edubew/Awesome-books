@@ -26,11 +26,18 @@ class Interface {
     bookList.appendChild(row);
   }
 
+  // Delete book
+  static deleteBook(el){
+    if(el.classList.contains('delete')){
+      el.parentElement.parentElement.remove();
+    }
+  }
+
+  // Clear fields
   static clearFields(){
     document.querySelector('.title').value = '';
     document.querySelector('.author').value = '';
-  }
-    
+  }  
   }
 
 
@@ -57,3 +64,6 @@ document.querySelector('form').addEventListener('submit', (e)=>{
 });
 
 // Event: Remove books
+document.querySelector('.book-list').addEventListener('click', (e)=>{
+  Interface.deleteBook(e.target);
+});

@@ -11,8 +11,19 @@ class Interface {
   static displayBooks() {
     const books = Store.getBooks();
 
-    books.forEach((book))
+    books.forEach((book) => Interface.addBookToList(book));
+  }
+  static addBookToList(book){
+    const bookList = document.querySelector('.book-list');
 
+    // create a table row element
+    const row = document.createElement('tr');
+    row.innerHTML =`
+     <td>${book.title}</td>
+     <td>${book.author}</td>
+     <td><a href="#" class="delete">Remove</a></td>
+    `;
+    bookList.appendChild(row);
   }
 
 }

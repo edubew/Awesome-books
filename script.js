@@ -9,7 +9,7 @@ class Book {
 // Interface class: handles the add and remove books functionality on the UI
 class Interface {
   static displayBooks() {
-    const books = Store.getBooks();
+    const books = store.getBook();
 
     books.forEach((book) => Interface.addBookToList(book));
   }
@@ -40,9 +40,33 @@ class Interface {
   }  
   }
 
-
-
 // Store class: Handles local storage
+class store {
+  static getBook(){
+    let books;
+    if(localStorage.getItem('books')===null){
+      books = [];
+    } 
+    else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+    return books;
+  }
+  static addBook(book){
+    const books = store.getBook();
+    books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+  static removeBook(title){
+    const books = store.getBook();
+    books.forEach((book, index)=>{
+      if(book.title === title){
+        books.splice(index, 1);
+      }
+    });
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+}
 
 // Event: Display books
  document.addEventListener('DOMContentLoaded', Interface.displayBooks); //call the displaybooks method everytime the page loads
@@ -61,9 +85,14 @@ document.querySelector('form').addEventListener('submit', (e)=>{
 
  Interface.clearFields();   // Clear input fields
 
+ store.addBook(book); // Add book to the local storage
+
 });
 
 // Event: Remove books
 document.querySelector('.book-list').addEventListener('click', (e)=>{
   Interface.deleteBook(e.target);
+
+  // Remove book from storage
+  store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });

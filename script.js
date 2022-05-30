@@ -26,12 +26,34 @@ class Interface {
     bookList.appendChild(row);
   }
 
-}
+  static clearFields(){
+    document.querySelector('.title').value = '';
+    document.querySelector('.author').value = '';
+  }
+    
+  }
+
+
 
 // Store class: Handles local storage
 
 // Event: Display books
+ document.addEventListener('DOMContentLoaded', Interface.displayBooks); //call the displaybooks method everytime the page loads
 
 // Event: Add books
+document.querySelector('form').addEventListener('submit', (e)=>{
+  e.preventDefault();
+
+  // Get form values
+  const title = document.querySelector('.title').value;
+  const author = document.querySelector('.author').value;
+
+  const book = new Book(title, author); // Instatiate book
+  
+  Interface.addBookToList(book);  // Add book to interface
+
+ Interface.clearFields();   // Clear input fields
+
+});
 
 // Event: Remove books

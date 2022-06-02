@@ -1,19 +1,24 @@
 * {
   font-family: 'Lobster', cursive;
-  background: #87494d;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background: #c7d0d7;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
   font-size: 14px;
-  color: #000;
+  color: #fff;
 }
 
-h1{
+h1 {
   text-align: center;
   margin-top: 20px;
+  color: rgb(90, 4, 20);
 }
 
 table {
@@ -21,26 +26,30 @@ table {
   text-align: center;
   width: 75%;
   margin: 10%;
+  background: #14213d;
   border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(even ) {
-  background: #fff;
+tr:nth-child(even) {
+  background: #4e2845;
 }
 
-h2{
+h2 {
   text-align: center;
+  color: rgb(90, 4, 20);
 }
+
 form {
   margin: 5% 30%;
 }
 
-input[type ="text"]{
+input[type="text"] {
   margin: 5%;
   padding: 10px;
   width: 100%;
@@ -49,24 +58,26 @@ input[type ="text"]{
 }
 
 button {
-   padding: 5px;
+  padding: 5px;
   border: 2px solid black;
   box-shadow: 2px 4px;
   float: right;
 }
 
 .contact-information {
-  margin-top: 15%;
+  margin-top: 3%;
 }
 
-p{
+p {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 6%;
+  color: #000;
 }
 
 .contact-information ul {
   text-align: center;
   margin-top: 8%;
+  color: #000;
 }
 
 nav {
@@ -75,8 +86,9 @@ nav {
   align-items: center;
   margin: 4% 8%;
   padding: 12px;
+  background: #14213d;
   border: 2px solid black;
-  border-radius: 6px;
+  border-radius: 15px;
 }
 
 .nav-menu {
@@ -91,6 +103,19 @@ nav {
 footer h3 {
   margin: 4% 8%;
   border: 2px solid #000;
-  border-radius: 6px;
-  padding: 2%;
+  border-radius: 30px;
+  padding: 15px;
+  background: #14213d;
+}
+
+.hide {
+  display: none;
+}
+
+.show-date {
+  text-align: right;
+  color: #000;
+  margin-top: -10px;
+  margin-right: 60px;
+  margin-bottom: 15px;
 }

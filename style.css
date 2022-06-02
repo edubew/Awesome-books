@@ -1,0 +1,121 @@
+* {
+  font-family: 'Lobster', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #c7d0d7;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(90, 4, 20);
+}
+
+table {
+  border: 1px solid;
+  text-align: center;
+  width: 75%;
+  margin: 10%;
+  background: #14213d;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background: #4e2845;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(90, 4, 20);
+}
+
+form {
+  margin: 5% 30%;
+}
+
+input[type="text"] {
+  margin: 5%;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: 2px solid black;
+}
+
+button {
+  padding: 5px;
+  border: 2px solid black;
+  box-shadow: 2px 4px;
+  float: right;
+}
+
+.contact-information {
+  margin-top: 3%;
+}
+
+p {
+  text-align: center;
+  margin-top: 6%;
+  color: #000;
+}
+
+.contact-information ul {
+  text-align: center;
+  margin-top: 8%;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4% 8%;
+  padding: 12px;
+  background: #14213d;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+}
+
+.nav-menu li {
+  padding: 5px;
+}
+
+footer h3 {
+  margin: 4% 8%;
+  border: 2px solid #000;
+  border-radius: 30px;
+  padding: 15px;
+  background: #14213d;
+}
+
+.hide {
+  display: none;
+}
+
+.show-date {
+  text-align: right;
+  color: #000;
+  margin-top: -10px;
+  margin-right: 60px;
+  margin-bottom: 15px;
+}

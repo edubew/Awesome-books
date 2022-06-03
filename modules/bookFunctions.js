@@ -1,7 +1,8 @@
-import Store from "./Store.js";
-import Interface from "./Interface.js";
-import Book from "./Book.js";
-export const addBook =(e) => {
+import Store from './Store.js';
+import Interface from './Interface.js';
+import Book from './Book.js';
+
+export const addBook = (e) => {
   e.preventDefault();
 
   // Get form values
@@ -13,9 +14,9 @@ export const addBook =(e) => {
   Interface.addBookToList(book); // Add book to interface
   Interface.clearFields(); // Clear input fields
   Store.addBook(book); // Add book to the local storage
-}
+};
 
-export const removeBook =(e)=>{
-   Interface.deleteBook(e.target);
+export const removeBook = (e) => {
+  Interface.deleteBook(e.target);
   Store.removeBook(e.target.parentElement.previousSibling.textContent);
-}
+};

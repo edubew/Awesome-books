@@ -1,4 +1,5 @@
-import Store from "./Store.js";
+import Store from './Store.js';
+
 export default class Interface {
   static displayBooks() {
     const books = Store.getBook();
@@ -33,7 +34,7 @@ export default class Interface {
   //   const container = document.querySelector('#book-library');
   //   const nav = document.querySelector('nav');
   //   nav.insertBefore(div, container);
-     
+
   // }
 
   // Clear fields

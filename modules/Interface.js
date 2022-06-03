@@ -27,16 +27,6 @@ export default class Interface {
     }
   }
 
-  // static showAlert(message, classname){
-  //   const div= document.createElement('div');
-  //   div.className = `alert alert-sucess`
-  //   div.appendChild(document.createTextNode(message));
-  //   const container = document.querySelector('#book-library');
-  //   const nav = document.querySelector('nav');
-  //   nav.insertBefore(div, container);
-
-  // }
-
   // Clear fields
   static clearFields() {
     document.querySelector('.title').value = '';

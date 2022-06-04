@@ -30,7 +30,7 @@
 
 
 ## Project Preview(Demo)
-[Demo](https://www.loom.com/share/09c69dd6d669410cb29613ff5a4b346e)
+[Demo]( Your site is published at https://edubew.github.io/Awesome-books/)
 
 
 

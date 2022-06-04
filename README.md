@@ -30,7 +30,7 @@
 
 
 ## Project Preview(Demo)
-[Demo]( Your site is published at https://edubew.github.io/Awesome-books/)
+[Demo](https://edubew.github.io/Awesome-books/)
 
 
 

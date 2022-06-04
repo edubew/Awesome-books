@@ -98,6 +98,7 @@ nav {
 
 .nav-menu li {
   padding: 5px;
+  cursor: pointer;
 }
 
 footer h3 {

@@ -7,6 +7,7 @@
 body {
   background: #c7d0d7;
   color: #fff;
+  margin: 0 30%;
 }
 
 a {
@@ -17,15 +18,15 @@ a {
 
 h1 {
   text-align: center;
-  margin-top: 20px;
+  margin: 3% 0;
   color: rgb(90, 4, 20);
 }
 
 table {
   border: 1px solid;
   text-align: center;
-  width: 75%;
-  margin: 10%;
+  width: 100%;
+  margin: 6% 10%;
   background: #14213d;
   border-collapse: collapse;
 }
@@ -46,7 +47,7 @@ h2 {
 }
 
 form {
-  margin: 5% 30%;
+  margin: 0 20%;
 }
 
 input[type="text"] {
@@ -65,7 +66,9 @@ button {
 }
 
 .contact-information {
-  margin-top: 3%;
+  margin: 0 10%;
+  width: 100%;
+
 }
 
 p {
@@ -78,17 +81,19 @@ p {
   text-align: center;
   margin-top: 8%;
   color: #000;
+  list-style: none;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 4% 8%;
+  margin: 5% 8%;
+  width: 100%;
   padding: 12px;
   background: #14213d;
   border: 2px solid black;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .nav-menu {
@@ -102,7 +107,8 @@ nav {
 }
 
 footer h3 {
-  margin: 4% 8%;
+  margin: 15% 8%;
+  width: 100%;
   border: 2px solid #000;
   border-radius: 30px;
   padding: 15px;
@@ -114,9 +120,6 @@ footer h3 {
 }
 
 .show-date {
-  text-align: right;
   color: #000;
-  margin-top: -10px;
-  margin-right: 60px;
-  margin-bottom: 15px;
+  margin: 2% 20%;
 }

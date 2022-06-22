@@ -123,3 +123,9 @@ footer h3 {
   color: #000;
   margin: 2% 20%;
 }
+
+@media only screen and (max-width: 425px)  {
+  body {
+    margin: 0 10%;
+  }
+}

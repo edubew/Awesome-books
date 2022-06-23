@@ -29,8 +29,10 @@
 
 
 
-## Project Preview(Demo)
+## Live Demo
 [Demo](https://edubew.github.io/Awesome-books/)
+
+[!Screenshot](awesome-books-screenshot.PNG)
 
 
 

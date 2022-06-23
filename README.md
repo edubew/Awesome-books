@@ -32,7 +32,7 @@
 ## Live Demo
 [Demo](https://edubew.github.io/Awesome-books/)
 
-![Screenshot](screenshot.PNG)
+![Screenshot](image/screenshot.PNG)
 
 
 

@@ -30,7 +30,7 @@
 
 
 ## Live Demo
-[Demo](https://edubew.github.io/Awesome-books/)
+[Book Library Preview](https://edubew.github.io/Awesome-books/)
 
 ![Screenshot](image/screenshot.PNG)
 
